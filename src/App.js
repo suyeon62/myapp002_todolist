@@ -43,7 +43,7 @@ function App() {
   };
 
   const insertTodo = (e) => {
-    e.preventDefault(); //기본 이벤트 차단 //전파 차단(propagation)..?
+    e.preventDefault(); //기본 이벤트 차단 //전파 차단(propagation)...?
     setTodos((prevState) => {
       return [
         ...prevState,
