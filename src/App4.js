@@ -15,8 +15,12 @@ const App4 = () => {
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
+  const todoList = () => {
     dispatch(todoAction.getTodos());
+  };
+
+  useEffect(() => {
+    todoList();
   }, []);
 
   return (
